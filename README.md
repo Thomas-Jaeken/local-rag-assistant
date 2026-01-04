@@ -6,10 +6,13 @@ Then, the same model is used to embed the user query and the 5 chunks from the p
 Since we want to run the LLM locally and without logins, I chose the```microsoft/phi-2``` model.
 
 ## Usage
-
+Run only once:
 ```
 python -m scripts.ingest  # include your pdfs in data/raw
 python -m scripts.build_index
+```
+Run as many times as you want to prompt:
+```
 python -m scripts.query
 ```
 
