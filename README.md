@@ -3,7 +3,7 @@
 A local Retrieval-Augmented Generation (RAG) system workflow that is ready to load in your pdfs and generate answers grounded by those documents.
 First, the documents need be processed and embedded once, using the ```all-MiniLM-L6-v2``` model. 
 Then, the same model is used to embed the user query and the 5 chunks from the pdf data with the highest cosine similarity to the query are then used as context for an LLM together with the original query.
-Since we want to run the LLM locally and without logins, I chose the```microsoft/phi-2``` model.
+Since we want to run the LLM locally and without logins, I chose the```microsoft/phi-2``` model. If you have access to larger models, this can easily be replaced to improve performance.
 
 ## Usage
 Run only once:
